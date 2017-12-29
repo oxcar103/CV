@@ -7,4 +7,4 @@ This repository contains my curriculum vitae source files. In order to build my 
 Thanks to [Lothar :green_heart:](https://github.com/Lothar94) for helping me in writing it.
 
 ## License
-This source code is licensed by an GPL-style license that can be found in the [LICENSE](LICENSE) file.
+This source code is licensed by a [GPL-style license](LICENSE).  

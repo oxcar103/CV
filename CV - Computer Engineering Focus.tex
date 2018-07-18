@@ -1,0 +1,94 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Óscar}{Bermúdez Garrido}
+\title{Curriculum Vitae}                           % optional, remove / comment the line if not wanted
+%\address{C/Doctor Vaca de Castro}{18015}{Granada(Spain)}      % optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(+34) 664-39-43-68}                 % optional, remove / comment the line if not wanted
+\email{oxcar103@gmail.com}                         % optional, remove / comment the line if not wanted
+\homepage{https://github.com/oxcar103}             % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{logo}                          % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2006 -- 2010}{Secondary Education(ESO)}{IES San Felipe Neri}{Martos(Jaén)}{}{} % arguments 3 to 6 can be left empty
+\cventry{2009 -- 2011}{Estalmat}{Facultad de Ciencias(Universidad de Granada)}{Granada}{Project to detect and stimulate early mathematical talent}{}
+\cventry{2010 -- 2012}{Bachillerato}{IES San Felipe Neri}{Martos(Jaén)}{}{}
+\cventry{2012 -- 2018}{Degree in Computer Engineering}{ETSIIT (Universidad de Granada)}{Granada}{\textit{6º Grade}}{}
+\cventry{2012 -- 2018}{Degree in Mathematics}{Facultad de Ciencias (Universidad de Granada)}{Granada}{\textit{6º Grade}}{}
+\cventry{Oct 2017 -- Nov 2017}{Course of Noncommutative Algebra Applied to Codes and Cryptography}{Universidad de Almería}{Almería}{}{}
+
+\section{Laboral Experience}
+\cventry{Jun 2010 -- Sep 2010}{Personal Mathematics Teacher}{Freelance}{Martos(Jaén)}{}{Explaining mathematics Secondary Education level to a couple of students.}
+\cventry{Jun 2013 -- Sep 2013}{Personal Mathematics Teacher}{Freelance}{Martos(Jaén)}{}{Explaining mathematics Secondary Education and "Bachillerato" level to a few students.}
+\cventry{2013 -- now}{Resource Contributor}{LibreIM}{Granada}{}{Style updates, fixing several bugs and writing resources.}
+\cventry{Nov 2015 -- Feb 2016}{Personal Computer Engineering Teacher}{Freelance}{Granada}{}{Explaining Computer Engineering Degree's subject("Computational Models") to a couple of classmates from a course below.}
+\cventry{Aug 2017 -- Sep 2017}{Personal Computer Engineering Teacher}{Freelance}{Online teaching}{}{Explaining Computer Engineering Degree's subject(similar to "Computational Models") to a student from other University.}
+
+\section{Languages}
+\cvitemwithcomment{Spanish}{Native}{}
+\cvitemwithcomment{English}{Cambridge B1}{}
+\cvitemwithcomment{French}{Basic}{High School classes}
+\cvitemwithcomment{Japanese}{Basic}{Self-taught}
+
+\section{Computer skills}
+\cvdoubleitem{\textbf{Self-Organization}}{Use of git and his tags to organice my own code. And use of Github's issues to define a TO DO list in a repository.}{\textbf{Team Work}}{Efficient task organization and good communication with teammates, mainly via Github, such as LibreIM's web.}
+\cvdoubleitem{\textbf{Operating System}}{Windows, Linux(Fedora, Ubuntu, Debian, Bodhi)}{\textit{Examples}}{ \href{https://github.com/oxcar103/Ingenieria-Servidores/tree/master/P1-Instalaci\%C3\%B3n\%20de\%20SO\%20y\%20RAID}{Installation of Fedora, Ubuntu Server and Windows Server.}}
+\cvdoubleitem{\textbf{Computer Skills}}{ASM(for Intel and Embedded System), Bash/Shell, C, C++, Haskell, Java, LaTeX, Python, Ruby, SQL, WxMaxima}{\textit{Examples}}{\href{https://github.com/oxcar103/Practicas-SE}{ASM \& C(Sistemas Empotrados)}, \href{https://github.com/oxcar103/Metaheuristicas}{Java(Metaheurísticas)},  \href{https://github.com/oxcar103/Practicas-TNC}{Bash \& Python}, \href{https://github.com/fdavidcl/aorist}{Ruby(Aorist)} \& almost all my projects are documented using LaTex.}
+\cvdoubleitem{\textbf{Artificial Intelligence}}{Vastly experienced in the development of processes involving AI and Metaheuristics techniques.}{\textit{Examples}}{\href{https://github.com/oxcar103/Metaheuristicas}{Diverses techniques of AI(Metaheurísticas)}}
+\cvdoubleitem{\textbf{DB Knowledge}}{Relational: mySQL, MariaDB, PostgreSQL} {\textit{Examples}}{\href{https://github.com/fdavidcl/aorist}{Integration of Ruby with mySQL(Aorist).}}
+\cvdoubleitem{\textbf{Frameworks}}{Lex, Openocd, Openssl, Weka}{\textit{Examples}}{\href{https://github.com/oxcar103/Graphs-TexLex}{Lex}, \href{https://github.com/oxcar103/Metaheuristicas}{Weka(Metaheurísticas)}, \href{https://github.com/oxcar103/Practicas-SPSI}{Openssl}  \& \href{https://github.com/oxcar103/Practicas-SE}{Openocd(Sistemas Empotrados)}.}
+\cvitem{\textbf{Embedded System}}{Development of a firmware for a ARM embedded system step by step. Design and assembly of hardware and software layer of a sumo robot for PIC Microcontroller with sensors(bumper, laser \& ultrasound). An example of this would be \href{https://github.com/oxcar103/Practicas-SE}{"Sistemas Empotrados"}.}
+
+\textbf{Note:} Click over examples to see more information about the projects.
+
+\section{Mathematics skills}
+Commutative Algebra, Criptography, Functional Analysis, Fourier Analysis, Differential Equations, Population Models, Probability Distributions, Euclidian Geometry, Differential Geometry \& Algebraic Topology.
+
+\section{Interests}
+\subsection{Vocational}
+\cvitem{Cybersecurity}{Interested in criptographic algorithm that allows a secure online communication.}
+\cvitem{Fractals}{Interested in unique facts that are produced from simple rules aplied to simple figures.}
+\cvitem{Development of AI Agents}{It's the same feeling that with fractals plus satisfaction thinking that you created that AI.}
+
+\end{document}
+
+%% end of file `template.tex'.
